@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Clongy | Orders, content and video for small online brands</title>
+<meta name="description" content="Portfolio of Liane Chloem Longcop (Clongy): virtual assistant, social media, short-form video and design for small online brands. Open to full-time remote roles.">
+<meta property="og:title" content="Clongy | Portfolio">
+<meta property="og:description" content="Orders, content and video for small online brands. Self-taught, open to full-time remote work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f7f7f5; --ink:#17171c; --muted:#5d606b; --line:#d9dbe1; --mist:#eceef3; --cobalt:#2b4fb5; --cobalt-dark:#213f93;
+  --font:"Schibsted Grotesk","Helvetica Neue",Arial,system-ui,sans-serif;
+  --ease-out:cubic-bezier(.23,1,.32,1);
+  --gutter:clamp(18px,4.2vw,56px);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.22em;transition:color 150ms ease,text-decoration-color 150ms ease}
+::selection{background:var(--cobalt);color:#fff}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px;border-radius:3px}
+.wrap{padding-inline:var(--gutter);max-width:1360px;margin-inline:auto}
+h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.02}
+p{max-width:62ch}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 14px;z-index:99}
+.skip:focus{left:8px}
+
+/* header */
+header.top{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:saturate(1.2) blur(8px)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;font-size:20px;letter-spacing:-.03em;text-decoration:none}
+nav ul{display:flex;gap:26px;list-style:none;padding:0}
+nav a{text-decoration:none;font-size:15px;font-weight:500;color:var(--muted)}
+nav a.cta{color:var(--cobalt);font-weight:600}
+@media (hover:hover) and (pointer:fine){nav a:hover{color:var(--ink)}nav a.cta:hover{color:var(--cobalt-dark)}}
+@media(max-width:720px){nav li:not(:last-child){display:none}}
+
+/* hero */
+.hero{padding-block:clamp(44px,8vw,112px) clamp(40px,6vw,80px)}
+.hero h1{font-size:clamp(46px,8.4vw,122px);letter-spacing:-.045em;line-height:.94;max-width:13ch}
+.hero .intro{font-size:clamp(19px,1.7vw,23px);line-height:1.5;margin-top:28px;max-width:44ch;color:#33353d}
+.actions{display:flex;flex-wrap:wrap;gap:12px 14px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;font:inherit;font-weight:600;font-size:16px;padding:13px 22px;border-radius:999px;border:1.5px solid var(--ink);background:var(--ink);color:#fff;text-decoration:none;transition:transform 160ms var(--ease-out),background-color 150ms ease,color 150ms ease,border-color 150ms ease}
+.btn.quiet{background:transparent;color:var(--ink)}
+.btn:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.btn:hover{background:var(--cobalt);border-color:var(--cobalt)}.btn.quiet:hover{background:var(--ink);color:#fff;border-color:var(--ink)}}
+
+/* reel wall: the one bold moment */
+.wall{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.6vw,22px);margin-top:clamp(44px,6vw,84px);align-items:start}
+.wall figure{margin:0}
+.wall figure:nth-child(1){margin-top:0}
+.wall figure:nth-child(2){margin-top:clamp(24px,5vw,72px)}
+.wall figure:nth-child(3){margin-top:clamp(10px,2vw,28px)}
+.wall figure:nth-child(4){margin-top:clamp(36px,7vw,104px)}
+.wall video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px;background:var(--mist)}
+.wall figcaption{font-size:14px;color:var(--muted);margin-top:8px}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.wall figure{animation:rise 560ms var(--ease-out) both}
+.wall figure:nth-child(2){animation-delay:70ms}.wall figure:nth-child(3){animation-delay:140ms}.wall figure:nth-child(4){animation-delay:210ms}
+.wall-note{margin-top:clamp(20px,3vw,36px);color:var(--muted);font-size:15px}
+@media(max-width:720px){
+  .hero h1{letter-spacing:-.035em;line-height:1}
+  .wall{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);scroll-padding-inline:var(--gutter);scrollbar-width:none}
+  .wall::-webkit-scrollbar{display:none}
+  .wall figure{flex:0 0 58%;scroll-snap-align:start;margin-top:0!important}
+}
+
+/* sections */
+section{padding:clamp(56px,8vw,112px) 0;border-top:1px solid var(--line)}
+.split{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(24px,5vw,72px);align-items:start}
+@media(max-width:900px){.split{grid-template-columns:1fr}}
+.lead{position:sticky;top:92px}
+@media(max-width:900px){.lead{position:static}}
+h2{font-size:clamp(34px,4.4vw,60px)}
+.lead p{margin-top:18px;color:#33353d}
+.tools{margin-top:18px;font-size:15px;color:var(--muted)}
+h3{font-size:clamp(21px,2vw,26px);letter-spacing:-.02em;margin-bottom:6px}
+.group{margin-bottom:clamp(40px,5vw,64px)}
+.group:last-child{margin-bottom:0}
+.group>p{color:var(--muted);font-size:16px;margin-bottom:18px}
+
+/* media grids */
+.grid{display:grid;gap:clamp(12px,1.6vw,20px);grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.grid.tall{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.grid.wide{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.grid.wide .feature{grid-column:1/-1}
+.grid figure{margin:0}
+.grid video{width:100%;border-radius:8px;background:var(--mist);object-fit:cover}
+.grid .l video{aspect-ratio:16/9}
+.grid .p video{aspect-ratio:9/16}
+.grid figcaption{margin-top:9px;font-size:15px;line-height:1.35;font-weight:600}
+.grid figcaption span{display:block;font-weight:400;color:var(--muted);font-size:14px}
+.mason{columns:3 180px;column-gap:14px}
+.mason figure{margin:0 0 14px;break-inside:avoid}
+.mason img{width:100%;height:auto;border-radius:8px;background:var(--mist)}
+.mason.sq{columns:3 160px}
+.pair{display:grid;grid-template-columns:96px 1fr;gap:20px;align-items:start;margin-bottom:20px}
+.pair img.mark{width:96px;height:96px;border-radius:12px;object-fit:cover;background:var(--mist)}
+.pair p{color:var(--muted);font-size:16px}
+.pair h3{margin-bottom:4px}
+
+/* builds */
+dl.builds{display:grid;gap:0;max-width:760px}
+dl.builds div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:12px 32px;padding:22px 0;border-top:1px solid var(--line)}
+dl.builds div:first-child{border-top:0;padding-top:0}
+dl.builds dt{font-weight:800;font-size:22px;letter-spacing:-.02em;line-height:1.15}
+dl.builds dd{color:#33353d}
+@media(max-width:640px){dl.builds div{grid-template-columns:1fr}}
+.honest{margin-top:30px;font-size:18px;max-width:56ch}
+
+/* about */
+.about p+p{margin-top:16px}
+dl.facts{margin-top:34px;display:grid;grid-template-columns:max-content 1fr;gap:10px 28px;font-size:16px}
+dl.facts dt{color:var(--muted)}
+dl.facts dd{font-weight:500}
+@media(max-width:520px){dl.facts{grid-template-columns:1fr;gap:2px}dl.facts dd{margin-bottom:12px}}
+
+/* contact */
+.contact h2{font-size:clamp(40px,7vw,96px);letter-spacing:-.04em}
+.mail{display:inline-block;margin-top:26px;font-size:clamp(22px,3.4vw,40px);font-weight:600;letter-spacing:-.02em;color:var(--cobalt);text-decoration-thickness:2px;word-break:break-word}
+@media (hover:hover) and (pointer:fine){.mail:hover{color:var(--cobalt-dark)}}
+.contact .actions{margin-top:28px}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .wall figure{animation:none}
+  .btn{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#video">Skip to my work</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Clongy</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#graphics">Graphics</a></li>
+        <li><a href="#builds">Tools I built</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="cta" href="#contact">Get in touch</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <h1>Orders, content and video for small online brands.</h1>
+    <p class="intro">I'm Clongy (Liane Chloem Longcop), a virtual assistant and creator in Caloocan City. I'm self-taught, I learn by running real online businesses, and I'm looking for a full-time remote role.</p>
+    <div class="actions">
+      <a class="btn" href="mailto:chloemlongcop.work@gmail.com">Email me</a>
+      <a class="btn quiet" href="assets/Longcop_Liane_Resume.pdf" download>Download my resume</a>
+    </div>
+
+    <div class="wall" aria-label="Promo reels I made for Elelet Market">
+      <figure><video muted loop playsinline preload="none" poster="assets/reel-1.jpg" data-reel aria-label="Elelet Market reel: marinated chicken"><source src="assets/reel-1.mp4" type="video/mp4"></video><figcaption>Product promo</figcaption></figure>
+      <figure><video muted loop playsinline preload="none" poster="assets/reel-2.jpg" data-reel aria-label="Elelet Market reel: new arrival"><source src="assets/reel-2.mp4" type="video/mp4"></video><figcaption>New arrival</figcaption></figure>
+      <figure><video muted loop playsinline preload="none" poster="assets/reel-3.jpg" data-reel aria-label="Elelet Market reel: last call for the day"><source src="assets/reel-3.mp4" type="video/mp4"></video><figcaption>Last call</figcaption></figure>
+      <figure><video muted loop playsinline preload="none" poster="assets/reel-4.jpg" data-reel aria-label="Elelet Market seasonal reel"><source src="assets/reel-4.mp4" type="video/mp4"></video><figcaption>Seasonal</figcaption></figure>
+    </div>
+    <p class="wall-note">Daily promo reels for Elelet Market, made with AI-assisted motion tools and checked by me for brand and accuracy.</p>
+  </div>
+
+  <section id="video">
+    <div class="wrap split">
+      <div class="lead">
+        <h2>Video edits</h2>
+        <p>Long-form travel diaries, vertical vlogs and event recaps. I cut in DaVinci Resolve and CapCut, and use an AI-assisted workflow in Claude Code to speed up rough cuts, captions and polish. Pacing, music and story stay my calls.</p>
+        <p class="tools">Each clip is a 14-second preview of the full edit.</p>
+      </div>
+      <div>
+        <div class="group">
+          <h3>Core Memory series</h3>
+          <p>Five episodes with one consistent look.</p>
+          <div class="grid wide">
+            <figure class="l feature"><video muted loop playsinline preload="none" poster="assets/core3.jpg" data-reel aria-label="Core Memory 3: Gamay x Lapinig Diaries"><source src="assets/core3.mp4" type="video/mp4"></video><figcaption>Core Memory 3: Gamay x Lapinig Diaries</figcaption></figure>
+            <figure class="l"><video muted loop playsinline preload="none" poster="assets/core4.jpg" data-reel aria-label="Core Memory 4: Buhay sa Baybay"><source src="assets/core4.mp4" type="video/mp4"></video><figcaption>Core Memory 4: Buhay sa Baybay</figcaption></figure>
+            <figure class="l"><video muted loop playsinline preload="none" poster="assets/core5.jpg" data-reel aria-label="Core Memory 5: Blue Lagoon x Kanlangka Moments"><source src="assets/core5.mp4" type="video/mp4"></video><figcaption>Core Memory 5: Blue Lagoon x Kanlangka Moments</figcaption></figure>
+            <figure class="l"><video muted loop playsinline preload="none" poster="assets/core6.jpg" data-reel aria-label="Core Memory 6: Doon sa Uma"><source src="assets/core6.mp4" type="video/mp4"></video><figcaption>Core Memory 6: Doon sa Uma</figcaption></figure>
+            <figure class="l"><video muted loop playsinline preload="none" poster="assets/core7.jpg" data-reel aria-label="Core Memory 7: Jipapad x Homecoming ni Papalo"><source src="assets/core7.mp4" type="video/mp4"></video><figcaption>Core Memory 7: Jipapad x Homecoming ni Papalo</figcaption></figure>
+          </div>
+        </div>
+
+        <div class="group">
+          <h3>Vlogs and brand reels</h3>
+          <p>Vertical episodes for my own channel, Liane Yaps, and a reel for Redeemd.</p>
+          <div class="grid tall">
+            <figure class="p"><video muted loop playsinline preload="none" poster="assets/yaps18.jpg" data-reel aria-label="Liane Yaps episode 18"><source src="assets/yaps18.mp4" type="video/mp4"></video><figcaption>Liane Yaps, episode 18</figcaption></figure>
+            <figure class="p"><video muted loop playsinline preload="none" poster="assets/yaps20.jpg" data-reel aria-label="Liane Yaps episode 20"><source src="assets/yaps20.mp4" type="video/mp4"></video><figcaption>Liane Yaps, episode 20</figcaption></figure>
+            <figure class="p"><video muted loop playsinline preload="none" poster="assets/journal.jpg" data-reel aria-label="Quick journal update"><source src="assets/journal.mp4" type="video/mp4"></video><figcaption>Quick journal update</figcaption></figure>
+            <figure class="p"><video muted loop playsinline preload="none" poster="assets/redeemd5.jpg" data-reel aria-label="Redeemd day 5 reel"><source src="assets/redeemd5.mp4" type="video/mp4"></video><figcaption>Redeemd, day 5 reel</figcaption></figure>
+          </div>
+        </div>
+
+        <div class="group">
+          <h3>Events and trips</h3>
+          <p>Community events, family trips and a promo, in horizontal and vertical formats.</p>
+          <div class="grid">
+            <figure class="l"><video muted loop playsinline preload="none" poster="assets/ftb.jpg" data-reel aria-label="FTB Family Fun Fair 2026"><source src="assets/ftb.mp4" type="video/mp4"></video><figcaption>FTB Family Fun Fair 2026<span>CapCut</span></figcaption></figure>
+            <figure class="l"><video muted loop playsinline preload="none" poster="assets/chariot.jpg" data-reel aria-label="Samar: Chariot"><source src="assets/chariot.mp4" type="video/mp4"></video><figcaption>Samar: Chariot<span>DaVinci Resolve</span></figcaption></figure>
+            <figure class="l"><video muted loop playsinline preload="none" poster="assets/samarc1.jpg" data-reel aria-label="Samar promo clip"><source src="assets/samarc1.mp4" type="video/mp4"></video><figcaption>Samar promo clip<span>DaVinci Resolve</span></figcaption></figure>
+            <figure class="p"><video muted loop playsinline preload="none" poster="assets/ekpt2.jpg" data-reel aria-label="EK part 2"><source src="assets/ekpt2.mp4" type="video/mp4"></video><figcaption>EK, part 2<span>CapCut</span></figcaption></figure>
+            <figure class="p"><video muted loop playsinline preload="none" poster="assets/ekdump.jpg" data-reel aria-label="EK photo dump"><source src="assets/ekdump.mp4" type="video/mp4"></video><figcaption>EK photo dump<span>CapCut</span></figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="graphics">
+    <div class="wrap split">
+      <div class="lead">
+        <h2>Branding and graphics</h2>
+        <p>Logos, feed posts, menus and price lists, made in Canva and code-based tools. I use AI for first layouts and copy, then edit each piece to match the brand's voice.</p>
+      </div>
+      <div>
+        <div class="group">
+          <div class="pair">
+            <img class="mark" src="assets/elelet-logo.png" alt="Elelet Market logo: a market stall roof over three people" width="96" height="96">
+            <div><h3>Elelet Market</h3><p>"Your friendly neighborhood market." Brand look, daily posts and stories, with orders, inventory and customer chats behind them.</p></div>
+          </div>
+          <div class="mason">
+            <figure><img src="assets/g-e1.jpg" alt="Elelet Market poll post styled as a chat" loading="lazy"></figure>
+            <figure><img src="assets/g-e3.jpg" alt="Elelet Market new arrival post: marinated chicken" loading="lazy"></figure>
+            <figure><img src="assets/g-e2.jpg" alt="Elelet Market egg prices post" loading="lazy"></figure>
+            <figure><img src="assets/g-e4.jpg" alt="Elelet Market rice trio post" loading="lazy"></figure>
+            <figure><img src="assets/g-e6.jpg" alt="Elelet Market reseller program post" loading="lazy"></figure>
+            <figure><img src="assets/g-e5.jpg" alt="Elelet Market last-call post" loading="lazy"></figure>
+            <figure><img src="assets/g-e7.jpg" alt="Elelet Market delivery day post" loading="lazy"></figure>
+            <figure><img src="assets/g-e9.jpg" alt="Elelet Market pork trio post" loading="lazy"></figure>
+            <figure><img src="assets/g-e8.jpg" alt="Elelet Market slow Sunday post" loading="lazy"></figure>
+            <figure><img src="assets/g-e10.jpg" alt="Elelet Market frozen shrimp post" loading="lazy"></figure>
+            <figure><img src="assets/g-e11.jpg" alt="Elelet Market siomai and gyoza post" loading="lazy"></figure>
+            <figure><img src="assets/g-e12.jpg" alt="Elelet Market seasonal greeting post" loading="lazy"></figure>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="pair">
+            <img class="mark" src="assets/bakes-logo.jpg" alt="Liane Bakes logo in violet script lettering" width="96" height="96">
+            <div><h3>Liane Bakes</h3><p>A cookie brand with a violet, dreamy look. Product posts, the menu, pre-order announcements and promo videos.</p></div>
+          </div>
+          <div class="mason">
+            <figure><img src="assets/bakes-post-1.jpg" alt="Liane Bakes post: choco-chip cookies, box of 4" loading="lazy"></figure>
+            <figure><img src="assets/bakes-menu.jpg" alt="Liane Bakes cookie menu with prices" loading="lazy"></figure>
+            <figure><img src="assets/bakes-post-2.jpg" alt="Liane Bakes pre-order announcement" loading="lazy"></figure>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="pair">
+            <img class="mark" src="assets/g-r3.jpg" alt="Redeemd logo in white on black" width="96" height="96">
+            <div><h3>Redeemd</h3><p>Social posts for a clothing brand I co-founded with a steady, dark look.</p></div>
+          </div>
+          <div class="mason sq">
+            <figure><img src="assets/g-r1.jpg" alt="Redeemd apparel post with tagline" loading="lazy"></figure>
+            <figure><img src="assets/g-r2.jpg" alt="Redeemd post: Grace stays" loading="lazy"></figure>
+          </div>
+        </div>
+
+        <div class="group">
+          <div class="pair">
+            <img class="mark" src="assets/yaps-logo.png" alt="Liane Yaps logo in yellow lettering" width="96" height="96">
+            <div><h3>Liane Yaps</h3><p>My own vlog channel. I designed the logo and edit every episode.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="builds">
+    <div class="wrap split">
+      <div class="lead">
+        <h2>Tools I built for the store</h2>
+        <p>I use AI to build what the store needs, then test it myself before anyone relies on it.</p>
+      </div>
+      <div>
+        <dl class="builds">
+          <div><dt>Elelet Hub</dt><dd>A point-of-sale web app for store staff and delivery riders. It records orders and payments in Google Sheets, with PIN-protected admin and view-only access. Built with Google Apps Script.</dd></div>
+          <div><dt>Store website</dt><dd>A public storefront that reads live prices and stock from the store's Inventory Tracker sheet, so nobody updates prices by hand.</dd></div>
+          <div><dt>Daily workflow</dt><dd>Claude and ChatGPT draft captions, content calendars, message templates and spreadsheet formulas. I review every draft for accuracy and brand voice.</dd></div>
+        </dl>
+        <p class="honest">I'm not a developer by training, and I say so. What I bring is the habit of spotting a repeated task, building a small fix, and checking it before it goes live.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap split">
+      <div class="lead"><h2>About me</h2></div>
+      <div class="about">
+        <p>I've freelanced and taken commissions since 2023, and I help run several small online businesses: Elelet Market, GBH Clothing and Redeemd, and Liane Bakes. Everything I know about content, design, video and operations came from doing the work and teaching myself.</p>
+        <p>I'm studying Marketing Management at National University, Fairview, with one class on Mondays this term. That leaves me free to commit full-time to the right remote team.</p>
+        <dl class="facts">
+          <dt>Looking for</dt><dd>Full-time remote work</dd>
+          <dt>Hours</dt><dd>Philippine daytime preferred, open to other time zones</dd>
+          <dt>Languages</dt><dd>English and Filipino</dd>
+          <dt>Setup</dt><dd>Reliable home internet and equipment, with a backup workspace</dd>
+          <dt>Skills</dt><dd>Inbox and customer support, order processing, content calendars, caption writing, short-form video editing, Canva, CapCut, Google Sheets, AI-assisted workflows</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Need someone dependable who learns fast?</h2>
+      <a class="mail" href="mailto:chloemlongcop.work@gmail.com">chloemlongcop.work@gmail.com</a>
+      <div class="actions"><a class="btn quiet" href="assets/Longcop_Liane_Resume.pdf" download>Download my resume</a></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Liane Chloem Longcop</div></footer>
+
+<script>
+(function(){
+  var vids=[].slice.call(document.querySelectorAll('video[data-reel]'));
+  var calm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(calm||!('IntersectionObserver' in window)){
+    vids.forEach(function(v){v.controls=true;v.preload='metadata';});
+    return;
+  }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      var v=e.target;
+      if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){v.controls=true;});}
+      else v.pause();
+    });
+  },{threshold:.4});
+  vids.forEach(function(v){io.observe(v);});
+})();
+</script>
+</body>
+</html>
