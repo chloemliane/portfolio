@@ -4,309 +4,511 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>Clongy | Orders, content and video for small online brands</title>
-<meta name="description" content="Portfolio of Liane Chloem Longcop (Clongy): virtual assistant, social media, short-form video and design for small online brands. Open to full-time remote roles.">
+<title>Clongy | Virtual assistant, social media, and video for small online brands</title>
+<meta name="description" content="Portfolio of Liane Chloem Longcop (Clongy): virtual assistant, social media manager, short-form video editor, and graphic designer for small online brands. Open to full-time remote roles.">
 <meta property="og:title" content="Clongy | Portfolio">
-<meta property="og:description" content="Orders, content and video for small online brands. Self-taught, open to full-time remote work.">
+<meta property="og:description" content="Orders, content, and video for small online brands. Self-taught, open to full-time remote work.">
+<meta property="og:image" content="assets/me.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,600..900,100,1&family=Pacifico&family=Schibsted+Grotesk:wght@400;500;600;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#f7f7f5; --ink:#17171c; --muted:#5d606b; --line:#d9dbe1; --mist:#eceef3; --cobalt:#2b4fb5; --cobalt-dark:#213f93;
+  --paper:#fffcf3; --card:#ffffff; --ink:#1a1712; --muted:#5f5a4e; --line:#ece4cc;
+  --sun:#ffd60a; --sun-soft:#fff3b3; --pink:#d6336c; --sky:#bcd3e6;
+  --display:"Fraunces",Georgia,serif;
   --font:"Schibsted Grotesk","Helvetica Neue",Arial,system-ui,sans-serif;
+  --hand:"Pacifico","Brush Script MT",cursive;
   --ease-out:cubic-bezier(.23,1,.32,1);
   --gutter:clamp(18px,4.2vw,56px);
 }
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--paper);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{background:var(--paper);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:clip}
 img,video{display:block;max-width:100%}
-a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.22em;transition:color 150ms ease,text-decoration-color 150ms ease}
-::selection{background:var(--cobalt);color:#fff}
-:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px;border-radius:3px}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:.22em}
+::selection{background:var(--sun);color:var(--ink)}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px;border-radius:3px}
 .wrap{padding-inline:var(--gutter);max-width:1360px;margin-inline:auto}
-h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.02}
+h1,h2,h3{font-family:var(--display);font-weight:900;font-variation-settings:"SOFT" 100,"WONK" 1;letter-spacing:-.025em;line-height:1}
 p{max-width:62ch}
+.hand{font-family:var(--hand);font-weight:400;letter-spacing:0;line-height:1.2}
 .skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:8px 14px;z-index:99}
 .skip:focus{left:8px}
 
 /* header */
-header.top{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:saturate(1.2) blur(8px)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{font-weight:800;font-size:20px;letter-spacing:-.03em;text-decoration:none}
-nav ul{display:flex;gap:26px;list-style:none;padding:0}
-nav a{text-decoration:none;font-size:15px;font-weight:500;color:var(--muted)}
-nav a.cta{color:var(--cobalt);font-weight:600}
-@media (hover:hover) and (pointer:fine){nav a:hover{color:var(--ink)}nav a.cta:hover{color:var(--cobalt-dark)}}
-@media(max-width:720px){nav li:not(:last-child){display:none}}
+header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid transparent;transition:border-color 200ms ease}
+header.top.scrolled{border-bottom-color:var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{font-family:var(--display);font-weight:900;font-variation-settings:"SOFT" 100,"WONK" 1;font-size:24px;letter-spacing:-.02em;text-decoration:none}
+.brand span{color:var(--sun);font-size:.7em;vertical-align:super;margin-left:1px}
+nav ul{display:flex;gap:24px;list-style:none;padding:0}
+nav a{text-decoration:none;font-size:15px;font-weight:500;color:var(--muted);transition:color 150ms ease}
+nav a.cta{color:#fff;background:var(--ink);padding:8px 16px;border-radius:999px;font-weight:600}
+@media (hover:hover) and (pointer:fine){nav a:hover{color:var(--ink)}nav a.cta:hover{background:var(--sun);color:var(--ink)}}
+@media(max-width:720px){
+  nav{overflow-x:auto;scrollbar-width:none;margin-right:calc(var(--gutter) * -1);padding-right:var(--gutter)}
+  nav::-webkit-scrollbar{display:none}
+  nav ul{gap:16px;white-space:nowrap;align-items:center}
+  nav a{font-size:14px}
+  nav a.cta{padding:6px 12px}
+}
+@media(max-width:440px){nav li:nth-child(3),nav li:nth-child(4){display:none}}
 
-/* hero */
-.hero{padding-block:clamp(44px,8vw,112px) clamp(40px,6vw,80px)}
-.hero h1{font-size:clamp(46px,8.4vw,122px);letter-spacing:-.045em;line-height:.94;max-width:13ch}
-.hero .intro{font-size:clamp(19px,1.7vw,23px);line-height:1.5;margin-top:28px;max-width:44ch;color:#33353d}
+/* buttons */
 .actions{display:flex;flex-wrap:wrap;gap:12px 14px;margin-top:30px}
-.btn{display:inline-flex;align-items:center;font:inherit;font-weight:600;font-size:16px;padding:13px 22px;border-radius:999px;border:1.5px solid var(--ink);background:var(--ink);color:#fff;text-decoration:none;transition:transform 160ms var(--ease-out),background-color 150ms ease,color 150ms ease,border-color 150ms ease}
+.btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-weight:600;font-size:16px;padding:14px 24px;border-radius:999px;border:1.5px solid var(--ink);background:var(--ink);color:#fff;text-decoration:none;transition:transform 160ms var(--ease-out),background-color 150ms ease,color 150ms ease,border-color 150ms ease}
 .btn.quiet{background:transparent;color:var(--ink)}
 .btn:active{transform:scale(.97)}
-@media (hover:hover) and (pointer:fine){.btn:hover{background:var(--cobalt);border-color:var(--cobalt)}.btn.quiet:hover{background:var(--ink);color:#fff;border-color:var(--ink)}}
-
-/* reel wall: the one bold moment */
-.wall{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(10px,1.6vw,22px);margin-top:clamp(44px,6vw,84px);align-items:start}
-.wall figure{margin:0}
-.wall figure:nth-child(1){margin-top:0}
-.wall figure:nth-child(2){margin-top:clamp(24px,5vw,72px)}
-.wall figure:nth-child(3){margin-top:clamp(10px,2vw,28px)}
-.wall figure:nth-child(4){margin-top:clamp(36px,7vw,104px)}
-.wall video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px;background:var(--mist)}
-.wall figcaption{font-size:14px;color:var(--muted);margin-top:8px}
-@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
-.wall figure{animation:rise 560ms var(--ease-out) both}
-.wall figure:nth-child(2){animation-delay:70ms}.wall figure:nth-child(3){animation-delay:140ms}.wall figure:nth-child(4){animation-delay:210ms}
-.wall-note{margin-top:clamp(20px,3vw,36px);color:var(--muted);font-size:15px}
-@media(max-width:720px){
-  .hero h1{letter-spacing:-.035em;line-height:1}
-  .wall{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter);scroll-padding-inline:var(--gutter);scrollbar-width:none}
-  .wall::-webkit-scrollbar{display:none}
-  .wall figure{flex:0 0 58%;scroll-snap-align:start;margin-top:0!important}
+.btn .arr{transition:transform 200ms var(--ease-out)}
+@media (hover:hover) and (pointer:fine){
+  .btn:hover{background:var(--sun);border-color:var(--ink);color:var(--ink)}
+  .btn:hover .arr{transform:translateX(4px)}
+  .btn.quiet:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
 }
 
-/* sections */
-section{padding:clamp(56px,8vw,112px) 0;border-top:1px solid var(--line)}
-.split{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(24px,5vw,72px);align-items:start}
-@media(max-width:900px){.split{grid-template-columns:1fr}}
-.lead{position:sticky;top:92px}
-@media(max-width:900px){.lead{position:static}}
-h2{font-size:clamp(34px,4.4vw,60px)}
-.lead p{margin-top:18px;color:#33353d}
-.tools{margin-top:18px;font-size:15px;color:var(--muted)}
-h3{font-size:clamp(21px,2vw,26px);letter-spacing:-.02em;margin-bottom:6px}
-.group{margin-bottom:clamp(40px,5vw,64px)}
-.group:last-child{margin-bottom:0}
-.group>p{color:var(--muted);font-size:16px;margin-bottom:18px}
+/* hero */
+.hero{position:relative;padding-block:clamp(28px,5vw,64px) 0}
+.giant{position:absolute;inset-inline:0;top:clamp(120px,14vw,190px);z-index:0;pointer-events:none;user-select:none;white-space:nowrap;text-align:center;font-family:var(--display);font-weight:900;font-variation-settings:"SOFT" 100,"WONK" 1;letter-spacing:-.04em;line-height:.8;font-size:clamp(110px,24vw,380px);color:var(--sun-soft);will-change:transform}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,64px);align-items:center}
+.hello{font-size:clamp(24px,2.6vw,32px);color:var(--pink);transform:rotate(-3deg);display:inline-block;margin-bottom:10px}
+.hero h1{font-size:clamp(46px,7.2vw,108px);letter-spacing:-.05em;line-height:.92;max-width:12ch}
+.hero h1 em{font-style:italic;background:linear-gradient(transparent 58%,var(--sun) 58%,var(--sun) 92%,transparent 92%);padding-inline:.06em}
+.hero .intro{font-size:clamp(18px,1.6vw,22px);line-height:1.5;margin-top:24px;max-width:44ch;color:#3b332d}
+.roles{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;padding:0;list-style:none}
+.roles li{font-size:14px;font-weight:600;padding:7px 14px;border:1.5px dashed var(--ink);border-radius:999px;background:var(--card)}
+.portrait{position:relative;justify-self:center;width:min(100%,440px)}
+.portrait .frame{position:relative;border-radius:220px 220px 24px 24px;overflow:hidden;background:var(--sun);aspect-ratio:4/5;transform:rotate(2deg);border:5px solid var(--ink);box-shadow:10px 10px 0 var(--ink)}
+.portrait .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.portrait .note{position:absolute;left:-18%;bottom:14%;font-size:26px;color:var(--ink);transform:rotate(-8deg);display:flex;align-items:center;gap:4px;text-shadow:0 0 3px var(--paper),0 0 6px var(--paper),0 0 10px var(--paper)}
+.portrait .note svg{width:64px;height:40px;flex:none}
+.badge{position:absolute;right:-6%;top:-4%;width:clamp(104px,10vw,132px);aspect-ratio:1;border-radius:50%;background:var(--pink);color:#fff;display:grid;place-items:center;box-shadow:0 10px 24px -12px rgba(0,0,0,.35)}
+.badge svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 18s linear infinite}
+.badge b{font-size:28px;line-height:1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sticker{position:absolute;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;padding:8px 12px;border-radius:10px;background:var(--card);border:1.5px solid var(--ink);box-shadow:3px 3px 0 var(--ink);animation:float 5s ease-in-out infinite}
+.sticker.s1{left:-10%;top:16%;transform:rotate(-6deg);background:var(--sun)}
+.sticker.s2{right:-8%;bottom:30%;transform:rotate(5deg);animation-delay:-2.5s;background:var(--sky)}
+@keyframes float{50%{translate:0 -8px}}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .portrait{width:min(78%,360px);margin-top:12px}
+  .portrait .note{left:-12%;font-size:22px}
+  .sticker.s1{left:-6%}
+  .sticker.s2{right:-4%}
+  .giant{top:auto;bottom:clamp(160px,40vw,300px)}
+}
 
-/* media grids */
-.grid{display:grid;gap:clamp(12px,1.6vw,20px);grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
-.grid.tall{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
-.grid.wide{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
-.grid.wide .feature{grid-column:1/-1}
+/* marquee */
+.marquee{margin-top:clamp(48px,7vw,96px);background:var(--sun);color:var(--ink);border-block:3px solid var(--ink);overflow:hidden;transform:rotate(-1.2deg);margin-inline:-2vw}
+.marquee .track{display:flex;width:max-content;animation:slide 32s linear infinite}
+.marquee span{font-weight:800;font-size:clamp(18px,2vw,26px);letter-spacing:-.01em;padding:14px 0;white-space:nowrap}
+.marquee span::after{content:"✦";color:var(--ink);padding-inline:28px}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,2vw,24px);margin-top:clamp(48px,6vw,80px)}
+.stats div{border-top:2px solid var(--ink);padding-top:14px}
+.stats b{display:block;font-family:var(--display);font-size:clamp(44px,5.4vw,80px);font-weight:900;font-variation-settings:"SOFT" 100,"WONK" 1;letter-spacing:-.03em;line-height:1;color:var(--ink);text-shadow:4px 4px 0 var(--sun)}
+.stats span{font-size:15px;color:var(--muted)}
+@media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr);row-gap:28px}}
+
+/* reel wall */
+.reels{padding-top:clamp(56px,8vw,112px);--reel-w:min(clamp(210px,26vw,320px),calc((100svh - 300px) * .5625))}
+@media(max-width:720px){.reels{--reel-w:min(64vw,calc((100svh - 300px) * .5625))}}
+.pin-inner{overflow:hidden;margin-inline:calc(var(--gutter) * -1);padding-inline:var(--gutter)}
+.wall{display:flex;gap:clamp(14px,2vw,28px);margin-top:28px;padding-block:8px 28px;width:max-content;align-items:start}
+.wall figure{margin:0;flex:0 0 var(--reel-w);transition:transform 300ms var(--ease-out)}
+.wall figure:nth-child(odd){transform:rotate(-1.5deg)}
+.wall figure:nth-child(even){transform:rotate(1.5deg) translateY(18px)}
+/* no JS or reduced motion: swipe the row instead */
+.reels:not(.pinned) .pin-inner{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gutter)}
+.reels:not(.pinned) .wall figure{scroll-snap-align:start}
+/* JS: row stays on screen and slides sideways while you scroll down */
+.reels.pinned .pin-inner{position:sticky;top:64px;min-height:calc(100svh - 64px);display:flex;flex-direction:column;justify-content:center}
+.reels.pinned .wall{will-change:transform}
+@media (hover:hover) and (pointer:fine){.wall figure:hover{transform:rotate(0) translateY(-6px) scale(1.02)}}
+.wall video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:14px;background:var(--line);border:4px solid var(--card);box-shadow:0 18px 40px -24px rgba(0,0,0,.5)}
+.wall figcaption{font-size:22px;margin-top:6px;text-align:center}
+.wall-note{margin-top:clamp(36px,5vw,60px);color:var(--muted);font-size:15px}
+
+/* sections */
+section{padding:clamp(64px,9vw,128px) 0}
+.kicker{display:flex;align-items:baseline;gap:14px;margin-bottom:clamp(28px,4vw,48px)}
+.kicker .num{font-weight:800;font-size:clamp(14px,1.2vw,16px);background:var(--sun);color:var(--ink);border:2px solid var(--ink);border-radius:999px;padding:2px 10px;letter-spacing:.02em;align-self:center}
+h2{font-size:clamp(40px,6vw,88px)}
+h2 .hand{color:var(--pink);font-weight:400;font-size:.55em;display:inline-block;transform:rotate(-4deg) translateY(-.3em);margin-left:.2em}
+.lead{color:#3b332d;font-size:clamp(17px,1.4vw,19px);max-width:56ch}
+.lead+.lead{margin-top:14px}
+.tools{margin-top:14px;font-size:15px;color:var(--muted)}
+h3{font-size:clamp(22px,2.1vw,28px);letter-spacing:-.025em;margin-bottom:6px}
+.group{margin-top:clamp(44px,6vw,72px)}
+.group>p{color:var(--muted);font-size:16px;margin-bottom:18px}
+.split{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,5vw,72px);align-items:end}
+@media(max-width:900px){.split{grid-template-columns:1fr}}
+
+/* video grids */
+.grid{display:grid;gap:clamp(12px,1.6vw,20px);grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.grid.tall{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
+.grid.wide{grid-template-columns:repeat(4,1fr)}
+.grid.wide .feature{grid-column:span 2;grid-row:span 2}
+.grid.wide .w2{grid-column:span 2}
+.more{margin-top:24px}
+@media(max-width:900px){.grid.wide{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.grid.wide{grid-template-columns:1fr}.grid.wide .feature{grid-column:auto;grid-row:auto}}
 .grid figure{margin:0}
-.grid video{width:100%;border-radius:8px;background:var(--mist);object-fit:cover}
+.grid .shot{position:relative;overflow:hidden;border-radius:12px;background:var(--line)}
+.grid video{width:100%;object-fit:cover;transition:transform 500ms var(--ease-out)}
+@media (hover:hover) and (pointer:fine){.grid figure:hover video{transform:scale(1.04)}}
 .grid .l video{aspect-ratio:16/9}
+.grid .feature video{aspect-ratio:auto;height:100%}
+.grid .feature .shot{height:calc(100% - 34px)}
 .grid .p video{aspect-ratio:9/16}
 .grid figcaption{margin-top:9px;font-size:15px;line-height:1.35;font-weight:600}
 .grid figcaption span{display:block;font-weight:400;color:var(--muted);font-size:14px}
-.mason{columns:3 180px;column-gap:14px}
-.mason figure{margin:0 0 14px;break-inside:avoid}
-.mason img{width:100%;height:auto;border-radius:8px;background:var(--mist)}
-.mason.sq{columns:3 160px}
-.pair{display:grid;grid-template-columns:96px 1fr;gap:20px;align-items:start;margin-bottom:20px}
-.pair img.mark{width:96px;height:96px;border-radius:12px;object-fit:cover;background:var(--mist)}
-.pair p{color:var(--muted);font-size:16px}
-.pair h3{margin-bottom:4px}
 
-/* builds */
-dl.builds{display:grid;gap:0;max-width:760px}
-dl.builds div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:12px 32px;padding:22px 0;border-top:1px solid var(--line)}
-dl.builds div:first-child{border-top:0;padding-top:0}
-dl.builds dt{font-weight:800;font-size:22px;letter-spacing:-.02em;line-height:1.15}
-dl.builds dd{color:#33353d}
-@media(max-width:640px){dl.builds div{grid-template-columns:1fr}}
-.honest{margin-top:30px;font-size:18px;max-width:56ch}
+/* graphics: scrapbook */
+.graphics{background-color:var(--card);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:28px 28px;border-block:3px solid var(--ink)}
+.brandhead{display:flex;gap:18px;align-items:center;margin-bottom:22px}
+.brandhead img{width:72px;height:72px;border-radius:16px;object-fit:cover;background:var(--line);flex:none}
+.brandhead p{color:var(--muted);font-size:16px}
+.scrap{columns:4 200px;column-gap:22px}
+.scrap.sm{columns:3 200px}
+.scrap figure{position:relative;margin:0 0 26px;break-inside:avoid;background:#fff;padding:8px 8px 10px;border-radius:4px;box-shadow:0 14px 30px -18px rgba(0,0,0,.45);transition:transform 300ms var(--ease-out),box-shadow 300ms ease}
+.scrap figure:nth-child(3n+1){transform:rotate(-2deg)}
+.scrap figure:nth-child(3n+2){transform:rotate(1.6deg)}
+.scrap figure:nth-child(3n){transform:rotate(-.8deg)}
+.scrap figure:nth-child(4n+1)::before{content:"";position:absolute;top:-10px;left:50%;width:80px;height:22px;translate:-50% 0;rotate:-4deg;background:color-mix(in srgb,var(--sun) 65%,transparent)}
+.scrap figure:nth-child(4n+3)::before{content:"";position:absolute;top:-10px;left:18px;width:64px;height:20px;rotate:-14deg;background:color-mix(in srgb,var(--sky) 80%,transparent)}
+.scrap img{width:100%;height:auto;border-radius:2px;background:var(--line)}
+@media (hover:hover) and (pointer:fine){.scrap figure:hover{transform:rotate(0) scale(1.04);box-shadow:0 24px 40px -18px rgba(0,0,0,.5);z-index:2}}
+
+/* numbered cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,24px)}
+@media(max-width:900px){.cards{grid-template-columns:1fr}}
+.card{position:relative;background:var(--card);border:1.5px solid var(--ink);border-radius:20px;padding:28px 26px 30px;box-shadow:5px 5px 0 var(--ink);transition:transform 200ms var(--ease-out),box-shadow 200ms var(--ease-out)}
+@media (hover:hover) and (pointer:fine){.card:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--sun)}}
+.card .n{font-family:var(--display);font-weight:900;font-variation-settings:"SOFT" 100,"WONK" 1;font-size:60px;letter-spacing:-.03em;line-height:1;color:var(--ink);text-shadow:4px 4px 0 var(--sun);display:block;margin-bottom:18px}
+.card h3{margin-bottom:10px}
+.card p{color:#3b332d;font-size:16px}
+.card .tag{display:inline-block;margin-top:16px;font-size:13px;font-weight:600;color:var(--muted)}
+.honest{margin-top:clamp(28px,4vw,44px);font-size:clamp(20px,2vw,26px);line-height:1.35;max-width:40ch;font-weight:500}
+.honest .hand{color:var(--pink);font-size:1.05em}
+
+/* how I work */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;border-top:2px solid var(--ink)}
+.steps li{list-style:none;padding:22px 22px 6px 0}
+.steps li+li{padding-left:22px;border-left:1px solid var(--line)}
+.steps b{display:block;font-size:20px;letter-spacing:-.02em;margin-bottom:6px}
+.steps b::before{counter-increment:s;content:"0" counter(s);display:inline-block;font-size:13px;background:var(--sun);border:2px solid var(--ink);border-radius:999px;padding:1px 9px;margin-bottom:10px}
+.steps p{font-size:16px;color:var(--muted)}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}.steps li:nth-child(3){padding-left:0;border-left:0}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}.steps li,.steps li+li{padding-left:0;border-left:0;border-bottom:1px solid var(--line);padding-bottom:18px}}
+ol.steps{padding:0}
 
 /* about */
-.about p+p{margin-top:16px}
-dl.facts{margin-top:34px;display:grid;grid-template-columns:max-content 1fr;gap:10px 28px;font-size:16px}
+.about-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,88px);align-items:start}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr}}
+.polas{position:relative;width:100%;max-width:520px;aspect-ratio:1/1.1}
+.pola{position:absolute;width:62%;background:#fff;padding:10px 10px 44px;box-shadow:0 20px 40px -22px rgba(0,0,0,.5);transition:transform 300ms var(--ease-out)}
+.pola img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%}
+.pola figcaption{position:absolute;left:0;right:0;bottom:8px;text-align:center;font-size:22px}
+.pola.a{left:0;top:0;transform:rotate(-5deg)}
+.pola.b{right:0;top:22%;transform:rotate(4deg)}
+@media (hover:hover) and (pointer:fine){.pola:hover{transform:rotate(0) scale(1.03);z-index:2}}
+.about-copy p+p{margin-top:16px}
+.timeline{margin-top:34px;padding:0;list-style:none;border-left:2px solid var(--ink)}
+.timeline li{position:relative;padding:0 0 18px 22px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--sun);border:2px solid var(--ink)}
+.timeline b{display:block;font-size:17px}
+.timeline span{font-size:15px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;padding:0;list-style:none}
+.chips li{font-size:14px;font-weight:600;padding:6px 12px;border-radius:8px;background:var(--paper);border:1.5px solid var(--line)}
+.chips li:nth-child(3n+1){background:color-mix(in srgb,var(--sun-soft) 90%,var(--paper))}
+.chips li:nth-child(3n+2){background:color-mix(in srgb,var(--sky) 45%,var(--paper))}
+dl.facts{margin-top:28px;display:grid;grid-template-columns:max-content 1fr;gap:8px 26px;font-size:16px}
 dl.facts dt{color:var(--muted)}
 dl.facts dd{font-weight:500}
-@media(max-width:520px){dl.facts{grid-template-columns:1fr;gap:2px}dl.facts dd{margin-bottom:12px}}
+@media(max-width:520px){dl.facts{grid-template-columns:1fr;gap:2px}dl.facts dd{margin-bottom:10px}}
 
 /* contact */
-.contact h2{font-size:clamp(40px,7vw,96px);letter-spacing:-.04em}
-.mail{display:inline-block;margin-top:26px;font-size:clamp(22px,3.4vw,40px);font-weight:600;letter-spacing:-.02em;color:var(--cobalt);text-decoration-thickness:2px;word-break:break-word}
-@media (hover:hover) and (pointer:fine){.mail:hover{color:var(--cobalt-dark)}}
-.contact .actions{margin-top:28px}
-footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+.contact{background:var(--sun);color:var(--ink);border-top:3px solid var(--ink);text-align:center;position:relative;overflow:hidden}
+.contact .hand{font-size:clamp(22px,2.6vw,32px);color:var(--ink);display:inline-block;transform:rotate(-3deg)}
+.contact h2{font-size:clamp(52px,10vw,150px);letter-spacing:-.055em;margin:10px auto 0;max-width:12ch}
+.mail{display:inline-block;margin-top:30px;font-size:clamp(20px,3vw,36px);font-weight:700;letter-spacing:-.02em;color:var(--ink);text-decoration-thickness:2px;word-break:break-word}
+.contact .actions{justify-content:center}
+.contact .btn{background:var(--ink);color:#fff;border-color:var(--ink)}
+.contact .btn.quiet{background:transparent;color:var(--ink);border-color:var(--ink)}
+@media (hover:hover) and (pointer:fine){
+  .mail:hover{color:var(--pink)}
+  .contact .btn:hover{background:#fff;color:var(--ink);border-color:var(--ink)}
+  .contact .btn.quiet:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* scroll reveal */
+.js .rv{opacity:0;translate:0 28px;transition:opacity 700ms var(--ease-out),translate 700ms var(--ease-out)}
+.js .rv.in{opacity:1;translate:0 0}
+.js .rv.d1{transition-delay:80ms}.js .rv.d2{transition-delay:160ms}.js .rv.d3{transition-delay:240ms}
+/* hero animates on load, no observer needed */
+.js .hero-grid .rv{opacity:1;translate:0 0;animation:rise 800ms var(--ease-out) both}
+.js .hero-grid .rv.d1{animation-delay:100ms}.js .hero-grid .rv.d2{animation-delay:200ms}.js .hero-grid .rv.d3{animation-delay:300ms}
+@keyframes rise{from{opacity:0;translate:0 28px}}
+@media(max-width:520px){.scrap,.scrap.sm{columns:2;column-gap:14px}.scrap figure{margin-bottom:18px;padding:5px 5px 6px}}
 
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .wall figure{animation:none}
-  .btn{transition:none}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv{opacity:1;translate:0 0}
 }
 </style>
 </head>
 <body>
+<script>document.documentElement.classList.add('js')</script>
 <a class="skip" href="#video">Skip to my work</a>
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#top">Clongy</a>
+    <a class="brand" href="#top">Clongy<span aria-hidden="true">✦</span></a>
     <nav aria-label="Main">
       <ul>
         <li><a href="#video">Video</a></li>
         <li><a href="#graphics">Graphics</a></li>
-        <li><a href="#builds">Tools I built</a></li>
+        <li><a href="#builds">Tools</a></li>
         <li><a href="#about">About</a></li>
-        <li><a class="cta" href="#contact">Get in touch</a></li>
+        <li><a class="cta" href="#contact">Hire me</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
 <main id="top">
-  <div class="wrap hero">
-    <h1>Orders, content and video for small online brands.</h1>
-    <p class="intro">I'm Clongy (Liane Chloem Longcop), a virtual assistant and creator in Caloocan City. I'm self-taught, I learn by running real online businesses, and I'm looking for a full-time remote role.</p>
-    <div class="actions">
-      <a class="btn" href="mailto:chloemlongcop.work@gmail.com">Email me</a>
-      <a class="btn quiet" href="assets/Longcop_Liane_Resume.pdf" download>Download my resume</a>
+  <div class="hero">
+    <div class="giant" aria-hidden="true" data-drift>CLONGY</div>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hello hand rv">Hi, I'm Liane!</span>
+        <h1 class="rv d1">I keep small online brands <em>running</em> and looking good.</h1>
+        <p class="intro rv d2">Virtual assistant, social media manager, and short-form video editor from Caloocan City. I've run real online stores since 2023, from orders and customer chats to daily posts and reels. Now I'm looking for a full-time remote team.</p>
+        <ul class="roles rv d2" aria-label="Roles">
+          <li>Virtual assistant</li><li>Social media</li><li>Video editor</li><li>Graphic design</li>
+        </ul>
+        <div class="actions rv d3">
+          <a class="btn" href="mailto:chloemlongcop.work@gmail.com">Email me <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn quiet" href="assets/Longcop_Liane_Resume.pdf" download>Download my resume</a>
+        </div>
+      </div>
+      <div class="portrait rv d1">
+        <div class="frame"><img src="assets/me.jpg" alt="Liane Chloem Longcop smiling outdoors" width="1000" height="1328" fetchpriority="high"></div>
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><defs><path id="c" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><text font-size="10" font-weight="800" font-family="Schibsted Grotesk, Arial, sans-serif" fill="#ffffff"><textPath href="#c" textLength="274" lengthAdjust="spacing">OPEN TO REMOTE WORK • FULL-TIME •</textPath></text></svg>
+          <b>☺</b>
+        </div>
+        <span class="sticker s1" aria-hidden="true">Self-taught</span>
+        <span class="sticker s2" aria-hidden="true">PH-based</span>
+        <span class="note hand" aria-hidden="true">that's me!<svg viewBox="0 0 64 40" fill="none" stroke="#1c1714" stroke-width="2.5" stroke-linecap="round"><path d="M4 30 C 20 36, 40 30, 56 12"/><path d="M46 12 L57 11 L55 22"/></svg></span>
+      </div>
     </div>
 
-    <div class="wall" aria-label="Promo reels I made for Elelet Market">
-      <figure><video muted loop playsinline preload="none" poster="assets/reel-1.jpg" data-reel aria-label="Elelet Market reel: marinated chicken"><source src="assets/reel-1.mp4" type="video/mp4"></video><figcaption>Product promo</figcaption></figure>
-      <figure><video muted loop playsinline preload="none" poster="assets/reel-2.jpg" data-reel aria-label="Elelet Market reel: new arrival"><source src="assets/reel-2.mp4" type="video/mp4"></video><figcaption>New arrival</figcaption></figure>
-      <figure><video muted loop playsinline preload="none" poster="assets/reel-3.jpg" data-reel aria-label="Elelet Market reel: last call for the day"><source src="assets/reel-3.mp4" type="video/mp4"></video><figcaption>Last call</figcaption></figure>
-      <figure><video muted loop playsinline preload="none" poster="assets/reel-4.jpg" data-reel aria-label="Elelet Market seasonal reel"><source src="assets/reel-4.mp4" type="video/mp4"></video><figcaption>Seasonal</figcaption></figure>
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>Inbox and customer support</span><span>Order processing</span><span>Content calendars</span><span>Caption writing</span><span>Short-form video</span><span>Canva design</span><span>Google Sheets</span><span>AI-assisted workflows</span>
+        <span>Inbox and customer support</span><span>Order processing</span><span>Content calendars</span><span>Caption writing</span><span>Short-form video</span><span>Canva design</span><span>Google Sheets</span><span>AI-assisted workflows</span>
+      </div>
     </div>
-    <p class="wall-note">Daily promo reels for Elelet Market, made with AI-assisted motion tools and checked by me for brand and accuracy.</p>
+
+    <div class="wrap">
+      <div class="stats">
+        <div class="rv"><b data-count="2023">2023</b><span>Year I started client and store work</span></div>
+        <div class="rv d1"><b data-count="3">3</b><span>Online businesses I help run</span></div>
+        <div class="rv d2"><b data-count="26">26</b><span>Video edits on this page</span></div>
+        <div class="rv d3"><b data-count="2">2</b><span>Store tools I built</span></div>
+      </div>
+
+      <div class="reels" data-pin>
+       <div class="pin-inner">
+        <div class="kicker rv"><span class="num">00</span><h2>Daily reels <span class="hand">for Elelet Market</span></h2></div>
+        <div class="wall" aria-label="Promo reels I made for Elelet Market">
+          <figure class="rv"><video muted loop playsinline preload="none" poster="assets/reel-1.jpg" data-reel aria-label="Elelet Market reel: marinated chicken"><source src="assets/reel-1.mp4" type="video/mp4"></video><figcaption class="hand">Product promo</figcaption></figure>
+          <figure class="rv d1"><video muted loop playsinline preload="none" poster="assets/reel-2.jpg" data-reel aria-label="Elelet Market reel: new arrival"><source src="assets/reel-2.mp4" type="video/mp4"></video><figcaption class="hand">New arrival</figcaption></figure>
+          <figure class="rv d2"><video muted loop playsinline preload="none" poster="assets/reel-3.jpg" data-reel aria-label="Elelet Market reel: last call for the day"><source src="assets/reel-3.mp4" type="video/mp4"></video><figcaption class="hand">Last call</figcaption></figure>
+          <figure class="rv d3"><video muted loop playsinline preload="none" poster="assets/reel-4.jpg" data-reel aria-label="Elelet Market seasonal reel"><source src="assets/reel-4.mp4" type="video/mp4"></video><figcaption class="hand">Seasonal</figcaption></figure>
+        </div>
+        <p class="wall-note">Made with AI-assisted motion tools, then checked by me for brand and accuracy before posting.</p>
+       </div>
+      </div>
+    </div>
   </div>
 
   <section id="video">
-    <div class="wrap split">
-      <div class="lead">
-        <h2>Video edits</h2>
-        <p>Long-form travel diaries, vertical vlogs and event recaps. I cut in DaVinci Resolve and CapCut, and use an AI-assisted workflow in Claude Code to speed up rough cuts, captions and polish. Pacing, music and story stay my calls.</p>
-        <p class="tools">Each clip is a 14-second preview of the full edit.</p>
+    <div class="wrap">
+      <div class="split">
+        <div class="kicker rv" style="margin:0"><span class="num">01</span><h2>Video edits</h2></div>
+        <div class="rv d1">
+          <p class="lead">Long-form travel diaries, vertical vlogs, and event recaps. I cut in DaVinci Resolve and CapCut, and use an AI-assisted workflow in Claude Code to speed up rough cuts, captions, and polish. Pacing, music, and story stay my calls.</p>
+          <p class="tools">Each clip is a 14-second preview of the full edit.</p>
+        </div>
       </div>
-      <div>
-        <div class="group">
-          <h3>Core Memory series</h3>
-          <p>Five episodes with one consistent look.</p>
-          <div class="grid wide">
-            <figure class="l feature"><video muted loop playsinline preload="none" poster="assets/core3.jpg" data-reel aria-label="Core Memory 3: Gamay x Lapinig Diaries"><source src="assets/core3.mp4" type="video/mp4"></video><figcaption>Core Memory 3: Gamay x Lapinig Diaries</figcaption></figure>
-            <figure class="l"><video muted loop playsinline preload="none" poster="assets/core4.jpg" data-reel aria-label="Core Memory 4: Buhay sa Baybay"><source src="assets/core4.mp4" type="video/mp4"></video><figcaption>Core Memory 4: Buhay sa Baybay</figcaption></figure>
-            <figure class="l"><video muted loop playsinline preload="none" poster="assets/core5.jpg" data-reel aria-label="Core Memory 5: Blue Lagoon x Kanlangka Moments"><source src="assets/core5.mp4" type="video/mp4"></video><figcaption>Core Memory 5: Blue Lagoon x Kanlangka Moments</figcaption></figure>
-            <figure class="l"><video muted loop playsinline preload="none" poster="assets/core6.jpg" data-reel aria-label="Core Memory 6: Doon sa Uma"><source src="assets/core6.mp4" type="video/mp4"></video><figcaption>Core Memory 6: Doon sa Uma</figcaption></figure>
-            <figure class="l"><video muted loop playsinline preload="none" poster="assets/core7.jpg" data-reel aria-label="Core Memory 7: Jipapad x Homecoming ni Papalo"><source src="assets/core7.mp4" type="video/mp4"></video><figcaption>Core Memory 7: Jipapad x Homecoming ni Papalo</figcaption></figure>
-          </div>
-        </div>
 
-        <div class="group">
-          <h3>Vlogs and brand reels</h3>
-          <p>Vertical episodes for my own channel, Liane Yaps, and a reel for Redeemd.</p>
-          <div class="grid tall">
-            <figure class="p"><video muted loop playsinline preload="none" poster="assets/yaps18.jpg" data-reel aria-label="Liane Yaps episode 18"><source src="assets/yaps18.mp4" type="video/mp4"></video><figcaption>Liane Yaps, episode 18</figcaption></figure>
-            <figure class="p"><video muted loop playsinline preload="none" poster="assets/yaps20.jpg" data-reel aria-label="Liane Yaps episode 20"><source src="assets/yaps20.mp4" type="video/mp4"></video><figcaption>Liane Yaps, episode 20</figcaption></figure>
-            <figure class="p"><video muted loop playsinline preload="none" poster="assets/journal.jpg" data-reel aria-label="Quick journal update"><source src="assets/journal.mp4" type="video/mp4"></video><figcaption>Quick journal update</figcaption></figure>
-            <figure class="p"><video muted loop playsinline preload="none" poster="assets/redeemd5.jpg" data-reel aria-label="Redeemd day 5 reel"><source src="assets/redeemd5.mp4" type="video/mp4"></video><figcaption>Redeemd, day 5 reel</figcaption></figure>
-          </div>
+      <div class="group">
+        <h3 class="rv">Core Memory series</h3>
+        <p class="rv">Seven episodes from our Samar trip, edited in DaVinci Resolve with one consistent look.</p>
+        <div class="grid wide">
+          <figure class="l feature rv"><div class="shot"><video muted loop playsinline preload="none" poster="assets/chariot.jpg" data-reel aria-label="Core Memory 1: Chariot Adventures"><source src="assets/chariot.mp4" type="video/mp4"></video></div><figcaption>Core Memory 1: Chariot Adventures</figcaption></figure>
+          <figure class="l rv d1"><div class="shot"><video muted loop playsinline preload="none" poster="assets/core2.jpg" data-reel aria-label="Core Memory 2: Canawayon x Sabang"><source src="assets/core2.mp4" type="video/mp4"></video></div><figcaption>Core Memory 2: Canawayon x Sabang</figcaption></figure>
+          <figure class="l rv d2"><div class="shot"><video muted loop playsinline preload="none" poster="assets/core3.jpg" data-reel aria-label="Core Memory 3: Gamay x Lapinig Diaries"><source src="assets/core3.mp4" type="video/mp4"></video></div><figcaption>Core Memory 3: Gamay x Lapinig Diaries</figcaption></figure>
+          <figure class="l rv d1"><div class="shot"><video muted loop playsinline preload="none" poster="assets/core4.jpg" data-reel aria-label="Core Memory 4: Buhay sa Baybay"><source src="assets/core4.mp4" type="video/mp4"></video></div><figcaption>Core Memory 4: Buhay sa Baybay</figcaption></figure>
+          <figure class="l rv d2"><div class="shot"><video muted loop playsinline preload="none" poster="assets/core5.jpg" data-reel aria-label="Core Memory 5: Blue Lagoon x Kanlangka Moments"><source src="assets/core5.mp4" type="video/mp4"></video></div><figcaption>Core Memory 5: Blue Lagoon x Kanlangka Moments</figcaption></figure>
+          <figure class="l w2 rv"><div class="shot"><video muted loop playsinline preload="none" poster="assets/core6.jpg" data-reel aria-label="Core Memory 6: Doon sa Uma"><source src="assets/core6.mp4" type="video/mp4"></video></div><figcaption>Core Memory 6: Doon sa Uma</figcaption></figure>
+          <figure class="l w2 rv d1"><div class="shot"><video muted loop playsinline preload="none" poster="assets/core7.jpg" data-reel aria-label="Core Memory 7: Jipapad x Homecoming ni Papalo"><source src="assets/core7.mp4" type="video/mp4"></video></div><figcaption>Core Memory 7: Jipapad x Homecoming ni Papalo</figcaption></figure>
         </div>
+      </div>
 
-        <div class="group">
-          <h3>Events and trips</h3>
-          <p>Community events, family trips and a promo, in horizontal and vertical formats.</p>
-          <div class="grid">
-            <figure class="l"><video muted loop playsinline preload="none" poster="assets/ftb.jpg" data-reel aria-label="FTB Family Fun Fair 2026"><source src="assets/ftb.mp4" type="video/mp4"></video><figcaption>FTB Family Fun Fair 2026<span>CapCut</span></figcaption></figure>
-            <figure class="l"><video muted loop playsinline preload="none" poster="assets/chariot.jpg" data-reel aria-label="Samar: Chariot"><source src="assets/chariot.mp4" type="video/mp4"></video><figcaption>Samar: Chariot<span>DaVinci Resolve</span></figcaption></figure>
-            <figure class="l"><video muted loop playsinline preload="none" poster="assets/samarc1.jpg" data-reel aria-label="Samar promo clip"><source src="assets/samarc1.mp4" type="video/mp4"></video><figcaption>Samar promo clip<span>DaVinci Resolve</span></figcaption></figure>
-            <figure class="p"><video muted loop playsinline preload="none" poster="assets/ekpt2.jpg" data-reel aria-label="EK part 2"><source src="assets/ekpt2.mp4" type="video/mp4"></video><figcaption>EK, part 2<span>CapCut</span></figcaption></figure>
-            <figure class="p"><video muted loop playsinline preload="none" poster="assets/ekdump.jpg" data-reel aria-label="EK photo dump"><source src="assets/ekdump.mp4" type="video/mp4"></video><figcaption>EK photo dump<span>CapCut</span></figcaption></figure>
-          </div>
+      <div class="group">
+        <h3 class="rv">Vlogs and brand reels</h3>
+        <p class="rv">Vertical episodes for my own channel, Liane Yaps, plus a journal update and a reel for Redeemd. I film and edit every episode.</p>
+        <div class="grid tall">
+          <figure class="p rv"><div class="shot"><video muted loop playsinline preload="none" poster="assets/yaps1.jpg" data-reel aria-label="Liane Yaps episode 1"><source src="assets/yaps1.mp4" type="video/mp4"></video></div><figcaption>Liane Yaps, episode 1</figcaption></figure>
+          <figure class="p rv d1"><div class="shot"><video muted loop playsinline preload="none" poster="assets/yaps4.jpg" data-reel aria-label="Liane Yaps episode 4"><source src="assets/yaps4.mp4" type="video/mp4"></video></div><figcaption>Liane Yaps, episode 4</figcaption></figure>
+          <figure class="p rv d2"><div class="shot"><video muted loop playsinline preload="none" poster="assets/yaps7.jpg" data-reel aria-label="Liane Yaps episode 7"><source src="assets/yaps7.mp4" type="video/mp4"></video></div><figcaption>Liane Yaps, episode 7</figcaption></figure>
+          <figure class="p rv d3"><div class="shot"><video muted loop playsinline preload="none" poster="assets/yaps10.jpg" data-reel aria-label="Liane Yaps episode 10"><source src="assets/yaps10.mp4" type="video/mp4"></video></div><figcaption>Liane Yaps, episode 10</figcaption></figure>
+          <figure class="p rv"><div class="shot"><video muted loop playsinline preload="none" poster="assets/yaps14.jpg" data-reel aria-label="Liane Yaps episode 14"><source src="assets/yaps14.mp4" type="video/mp4"></video></div><figcaption>Liane Yaps, episode 14</figcaption></figure>
+          <figure class="p rv d1"><div class="shot"><video muted loop playsinline preload="none" poster="assets/yaps16.jpg" data-reel aria-label="Liane Yaps episode 16"><source src="assets/yaps16.mp4" type="video/mp4"></video></div><figcaption>Liane Yaps, episode 16</figcaption></figure>
+          <figure class="p rv d2"><div class="shot"><video muted loop playsinline preload="none" poster="assets/yaps18.jpg" data-reel aria-label="Liane Yaps episode 18"><source src="assets/yaps18.mp4" type="video/mp4"></video></div><figcaption>Liane Yaps, episode 18</figcaption></figure>
+          <figure class="p rv d3"><div class="shot"><video muted loop playsinline preload="none" poster="assets/yaps20.jpg" data-reel aria-label="Liane Yaps episode 20"><source src="assets/yaps20.mp4" type="video/mp4"></video></div><figcaption>Liane Yaps, episode 20</figcaption></figure>
+          <figure class="p rv"><div class="shot"><video muted loop playsinline preload="none" poster="assets/journal.jpg" data-reel aria-label="Quick journal update"><source src="assets/journal.mp4" type="video/mp4"></video></div><figcaption>Quick journal update</figcaption></figure>
+          <figure class="p rv d1"><div class="shot"><video muted loop playsinline preload="none" poster="assets/redeemd5.jpg" data-reel aria-label="Redeemd day 5 reel"><source src="assets/redeemd5.mp4" type="video/mp4"></video></div><figcaption>Redeemd, day 5 reel</figcaption></figure>
+        </div>
+        <p class="more rv"><a class="btn quiet" href="https://www.tiktok.com/@chloeyani" target="_blank" rel="noopener">More vlogs on my TikTok <span class="arr" aria-hidden="true">→</span></a></p>
+      </div>
+
+      <div class="group">
+        <h3 class="rv">Events and trips</h3>
+        <p class="rv">Theme park days, community events, and a Samar promo, in horizontal and vertical formats.</p>
+        <div class="grid">
+          <figure class="l rv"><div class="shot"><video muted loop playsinline preload="none" poster="assets/ek2026.jpg" data-reel aria-label="Enchanted Kingdom 2026"><source src="assets/ek2026.mp4" type="video/mp4"></video></div><figcaption>Enchanted Kingdom 2026<span>DaVinci Resolve</span></figcaption></figure>
+          <figure class="l rv d1"><div class="shot"><video muted loop playsinline preload="none" poster="assets/ftb.jpg" data-reel aria-label="FTB Family Fun Fair 2026"><source src="assets/ftb.mp4" type="video/mp4"></video></div><figcaption>FTB Family Fun Fair 2026<span>CapCut</span></figcaption></figure>
+          <figure class="l rv d2"><div class="shot"><video muted loop playsinline preload="none" poster="assets/samarc1.jpg" data-reel aria-label="Samar promo clip"><source src="assets/samarc1.mp4" type="video/mp4"></video></div><figcaption>Samar promo clip<span>DaVinci Resolve</span></figcaption></figure>
+          <figure class="p rv"><div class="shot"><video muted loop playsinline preload="none" poster="assets/ekpt2.jpg" data-reel aria-label="EK part 2"><source src="assets/ekpt2.mp4" type="video/mp4"></video></div><figcaption>EK, part 2<span>CapCut</span></figcaption></figure>
+          <figure class="p rv d1"><div class="shot"><video muted loop playsinline preload="none" poster="assets/ekdump.jpg" data-reel aria-label="EK photo dump"><source src="assets/ekdump.mp4" type="video/mp4"></video></div><figcaption>EK photo dump<span>CapCut</span></figcaption></figure>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="graphics">
-    <div class="wrap split">
-      <div class="lead">
-        <h2>Branding and graphics</h2>
-        <p>Logos, feed posts, menus and price lists, made in Canva and code-based tools. I use AI for first layouts and copy, then edit each piece to match the brand's voice.</p>
+  <section id="graphics" class="graphics">
+    <div class="wrap">
+      <div class="split">
+        <div class="kicker rv" style="margin:0"><span class="num">02</span><h2>Branding <span class="hand">&amp; graphics</span></h2></div>
+        <p class="lead rv d1">Logos, feed posts, menus, and price lists, made in Canva and code-based tools. I use AI for first layouts and copy, then edit each piece to match the brand's voice.</p>
       </div>
-      <div>
-        <div class="group">
-          <div class="pair">
-            <img class="mark" src="assets/elelet-logo.png" alt="Elelet Market logo: a market stall roof over three people" width="96" height="96">
-            <div><h3>Elelet Market</h3><p>"Your friendly neighborhood market." Brand look, daily posts and stories, with orders, inventory and customer chats behind them.</p></div>
-          </div>
-          <div class="mason">
-            <figure><img src="assets/g-e1.jpg" alt="Elelet Market poll post styled as a chat" loading="lazy"></figure>
-            <figure><img src="assets/g-e3.jpg" alt="Elelet Market new arrival post: marinated chicken" loading="lazy"></figure>
-            <figure><img src="assets/g-e2.jpg" alt="Elelet Market egg prices post" loading="lazy"></figure>
-            <figure><img src="assets/g-e4.jpg" alt="Elelet Market rice trio post" loading="lazy"></figure>
-            <figure><img src="assets/g-e6.jpg" alt="Elelet Market reseller program post" loading="lazy"></figure>
-            <figure><img src="assets/g-e5.jpg" alt="Elelet Market last-call post" loading="lazy"></figure>
-            <figure><img src="assets/g-e7.jpg" alt="Elelet Market delivery day post" loading="lazy"></figure>
-            <figure><img src="assets/g-e9.jpg" alt="Elelet Market pork trio post" loading="lazy"></figure>
-            <figure><img src="assets/g-e8.jpg" alt="Elelet Market slow Sunday post" loading="lazy"></figure>
-            <figure><img src="assets/g-e10.jpg" alt="Elelet Market frozen shrimp post" loading="lazy"></figure>
-            <figure><img src="assets/g-e11.jpg" alt="Elelet Market siomai and gyoza post" loading="lazy"></figure>
-            <figure><img src="assets/g-e12.jpg" alt="Elelet Market seasonal greeting post" loading="lazy"></figure>
-          </div>
-        </div>
 
-        <div class="group">
-          <div class="pair">
-            <img class="mark" src="assets/bakes-logo.jpg" alt="Liane Bakes logo in violet script lettering" width="96" height="96">
-            <div><h3>Liane Bakes</h3><p>A cookie brand with a violet, dreamy look. Product posts, the menu, pre-order announcements and promo videos.</p></div>
-          </div>
-          <div class="mason">
-            <figure><img src="assets/bakes-post-1.jpg" alt="Liane Bakes post: choco-chip cookies, box of 4" loading="lazy"></figure>
-            <figure><img src="assets/bakes-menu.jpg" alt="Liane Bakes cookie menu with prices" loading="lazy"></figure>
-            <figure><img src="assets/bakes-post-2.jpg" alt="Liane Bakes pre-order announcement" loading="lazy"></figure>
-          </div>
+      <div class="group">
+        <div class="brandhead rv">
+          <img src="assets/elelet-logo.png" alt="Elelet Market logo: a market stall roof over three people" width="72" height="72">
+          <div><h3>Elelet Market</h3><p>"Your friendly neighborhood market." Brand look, daily posts, and stories, with orders, inventory, and customer chats behind them.</p></div>
         </div>
-
-        <div class="group">
-          <div class="pair">
-            <img class="mark" src="assets/g-r3.jpg" alt="Redeemd logo in white on black" width="96" height="96">
-            <div><h3>Redeemd</h3><p>Social posts for a clothing brand I co-founded with a steady, dark look.</p></div>
-          </div>
-          <div class="mason sq">
-            <figure><img src="assets/g-r1.jpg" alt="Redeemd apparel post with tagline" loading="lazy"></figure>
-            <figure><img src="assets/g-r2.jpg" alt="Redeemd post: Grace stays" loading="lazy"></figure>
-          </div>
+        <div class="scrap">
+          <figure class="rv"><img src="assets/g-e1.jpg" alt="Elelet Market poll post styled as a chat" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/g-e3.jpg" alt="Elelet Market new arrival post: marinated chicken" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/g-e2.jpg" alt="Elelet Market egg prices post" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/g-e4.jpg" alt="Elelet Market rice trio post" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/g-e6.jpg" alt="Elelet Market reseller program post" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/g-e5.jpg" alt="Elelet Market last-call post" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/g-e7.jpg" alt="Elelet Market delivery day post" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/g-e9.jpg" alt="Elelet Market pork trio post" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/g-e8.jpg" alt="Elelet Market slow Sunday post" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/g-e10.jpg" alt="Elelet Market frozen shrimp post" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/g-e11.jpg" alt="Elelet Market siomai and gyoza post" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/g-e12.jpg" alt="Elelet Market seasonal greeting post" loading="lazy"></figure>
         </div>
+      </div>
 
-        <div class="group">
-          <div class="pair">
-            <img class="mark" src="assets/yaps-logo.png" alt="Liane Yaps logo in yellow lettering" width="96" height="96">
-            <div><h3>Liane Yaps</h3><p>My own vlog channel. I designed the logo and edit every episode.</p></div>
-          </div>
+      <div class="group">
+        <div class="brandhead rv">
+          <img src="assets/bakes-logo.jpg" alt="Liane Bakes logo in violet script lettering" width="72" height="72">
+          <div><h3>Liane Bakes</h3><p>A cookie brand with a violet, dreamy look. Product posts, the menu, pre-order announcements, and promo videos.</p></div>
+        </div>
+        <div class="scrap sm">
+          <figure class="rv"><img src="assets/bakes-post-1.jpg" alt="Liane Bakes post: choco-chip cookies, box of 4" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/bakes-menu.jpg" alt="Liane Bakes cookie menu with prices" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/bakes-post-2.jpg" alt="Liane Bakes pre-order announcement" loading="lazy"></figure>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="brandhead rv">
+          <img src="assets/g-r3.jpg" alt="Redeemd logo in white on black" width="72" height="72">
+          <div><h3>Redeemd</h3><p>Social posts for a clothing brand I co-founded, with a steady, dark look.</p></div>
+        </div>
+        <div class="scrap sm">
+          <figure class="rv"><img src="assets/g-r1.jpg" alt="Redeemd apparel post with tagline" loading="lazy"></figure>
+          <figure class="rv"><img src="assets/g-r2.jpg" alt="Redeemd post: Grace stays" loading="lazy"></figure>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="brandhead rv">
+          <img src="assets/yaps-logo.png" alt="Liane Yaps logo in yellow lettering" width="72" height="72">
+          <div><h3>Liane Yaps</h3><p>My own vlog channel. I designed the logo and edit every episode.</p></div>
         </div>
       </div>
     </div>
   </section>
 
   <section id="builds">
-    <div class="wrap split">
-      <div class="lead">
-        <h2>Tools I built for the store</h2>
-        <p>I use AI to build what the store needs, then test it myself before anyone relies on it.</p>
+    <div class="wrap">
+      <div class="split" style="margin-bottom:clamp(28px,4vw,48px)">
+        <div class="kicker rv" style="margin:0"><span class="num">03</span><h2>Tools I built</h2></div>
+        <p class="lead rv d1">I use AI to build what the store needs, then test it myself before anyone relies on it.</p>
       </div>
-      <div>
-        <dl class="builds">
-          <div><dt>Elelet Hub</dt><dd>A point-of-sale web app for store staff and delivery riders. It records orders and payments in Google Sheets, with PIN-protected admin and view-only access. Built with Google Apps Script.</dd></div>
-          <div><dt>Store website</dt><dd>A public storefront that reads live prices and stock from the store's Inventory Tracker sheet, so nobody updates prices by hand.</dd></div>
-          <div><dt>Daily workflow</dt><dd>Claude and ChatGPT draft captions, content calendars, message templates and spreadsheet formulas. I review every draft for accuracy and brand voice.</dd></div>
-        </dl>
-        <p class="honest">I'm not a developer by training, and I say so. What I bring is the habit of spotting a repeated task, building a small fix, and checking it before it goes live.</p>
+      <div class="cards">
+        <article class="card rv"><span class="n">01</span><h3>Elelet Hub</h3><p>A point-of-sale web app for store staff and delivery riders. It records orders and payments in Google Sheets, with PIN-protected admin and view-only access.</p><span class="tag">Google Apps Script · Google Sheets</span></article>
+        <article class="card rv d1"><span class="n">02</span><h3>Store website</h3><p>A public storefront that reads live prices and stock from the store's Inventory Tracker sheet, so nobody updates prices by hand.</p><span class="tag">Google Apps Script · Google Sheets</span></article>
+        <article class="card rv d2"><span class="n">03</span><h3>Daily workflow</h3><p>Claude and ChatGPT draft captions, content calendars, message templates, and spreadsheet formulas. I review every draft for accuracy and brand voice.</p><span class="tag">Claude · ChatGPT · Google Sheets</span></article>
       </div>
+      <p class="honest rv">I'm not a developer by training, and I say so. <span class="hand">What I bring:</span> spotting a repeated task, building a small fix, and checking it before it goes live.</p>
     </div>
   </section>
 
-  <section id="about">
-    <div class="wrap split">
-      <div class="lead"><h2>About me</h2></div>
-      <div class="about">
-        <p>I've freelanced and taken commissions since 2023, and I help run several small online businesses: Elelet Market, GBH Clothing and Redeemd, and Liane Bakes. Everything I know about content, design, video and operations came from doing the work and teaching myself.</p>
-        <p>I'm studying Marketing Management at National University, Fairview, with one class on Mondays this term. That leaves me free to commit full-time to the right remote team.</p>
-        <dl class="facts">
+  <section id="process" style="padding-top:0">
+    <div class="wrap">
+      <div class="kicker rv"><span class="num">04</span><h2>How I work</h2></div>
+      <ol class="steps rv">
+        <li><b>Learn the brand</b><p>Products, prices, voice, and the people who buy.</p></li>
+        <li><b>Set up the system</b><p>Sheets, templates, and a content calendar everyone can follow.</p></li>
+        <li><b>Make and ship</b><p>Posts, reels, replies, and orders, done daily and on time.</p></li>
+        <li><b>Check and improve</b><p>I review AI drafts and my own work before anything goes out.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="about" class="graphics">
+    <div class="wrap about-grid">
+      <div class="polas rv" aria-label="Photos of me">
+        <figure class="pola a"><img src="assets/me-ek.jpg" alt="Liane smiling in a light blue blazer at a theme park" loading="lazy"><figcaption class="hand">EK day out</figcaption></figure>
+        <figure class="pola b"><img src="assets/me-sunset.jpg" alt="Liane smiling at sunset after a Redeemd photo shoot" loading="lazy"><figcaption class="hand">Redeemd shoot</figcaption></figure>
+      </div>
+      <div class="about-copy">
+        <div class="kicker rv"><span class="num">05</span><h2>About me</h2></div>
+        <p class="lead rv">I've freelanced and taken commissions since 2023, and I help run several small online businesses: Elelet Market, GBH Clothing and Redeemd, and Liane Bakes. Everything I know about content, design, video, and operations came from doing the work and teaching myself.</p>
+        <p class="lead rv">I'm studying Marketing Management at National University, Fairview, with one class on Mondays this term. That leaves me free to commit full-time to the right remote team.</p>
+        <ul class="timeline rv">
+          <li><b>Store Administrator and Operations, Elelet Market</b><span>2026 – present</span></li>
+          <li><b>Freelance Social Media Manager, Video Editor, and Graphic Designer</b><span>2023 – present</span></li>
+          <li><b>Co-Founder, Operations and Social Media Lead, GBH Clothing and Redeemd</b><span>2023 – present</span></li>
+          <li><b>Online Business Manager, Liane Bakes</b><span>2023 – present</span></li>
+          <li><b>Program and Event Coordinator, Resonate Youth</b><span>2020 – 2025</span></li>
+        </ul>
+        <ul class="chips rv" aria-label="Skills">
+          <li>Inbox and customer support</li><li>Order processing</li><li>Content calendars</li><li>Caption writing</li><li>Short-form video</li><li>Canva</li><li>CapCut</li><li>DaVinci Resolve</li><li>Google Sheets</li><li>Meta Business Suite</li><li>AI-assisted workflows</li>
+        </ul>
+        <dl class="facts rv">
           <dt>Looking for</dt><dd>Full-time remote work</dd>
           <dt>Hours</dt><dd>Philippine daytime preferred, open to other time zones</dd>
           <dt>Languages</dt><dd>English and Filipino</dd>
           <dt>Setup</dt><dd>Reliable home internet and equipment, with a backup workspace</dd>
-          <dt>Skills</dt><dd>Inbox and customer support, order processing, content calendars, caption writing, short-form video editing, Canva, CapCut, Google Sheets, AI-assisted workflows</dd>
         </dl>
       </div>
     </div>
@@ -314,31 +516,100 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px soli
 
   <section id="contact" class="contact">
     <div class="wrap">
-      <h2>Need someone dependable who learns fast?</h2>
-      <a class="mail" href="mailto:chloemlongcop.work@gmail.com">chloemlongcop.work@gmail.com</a>
-      <div class="actions"><a class="btn quiet" href="assets/Longcop_Liane_Resume.pdf" download>Download my resume</a></div>
+      <span class="hand rv">Need someone dependable who learns fast?</span>
+      <h2 class="rv d1">Let's work together.</h2>
+      <a class="mail rv d2" href="mailto:chloemlongcop.work@gmail.com">chloemlongcop.work@gmail.com</a>
+      <div class="actions rv d3">
+        <a class="btn" href="mailto:chloemlongcop.work@gmail.com">Email me <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn quiet" href="assets/Longcop_Liane_Resume.pdf" download>Download my resume</a>
+      </div>
     </div>
   </section>
 </main>
 
-<footer><div class="wrap">&copy; 2026 Liane Chloem Longcop</div></footer>
+<footer><div class="wrap"><span>&copy; 2026 Liane Chloem Longcop</span><span>Made by me, with a little help from AI.</span></div></footer>
 
 <script>
 (function(){
-  var vids=[].slice.call(document.querySelectorAll('video[data-reel]'));
   var calm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(calm||!('IntersectionObserver' in window)){
+  var hasIO='IntersectionObserver' in window;
+
+  // reels: play only while on screen
+  var vids=[].slice.call(document.querySelectorAll('video[data-reel]'));
+  if(calm||!hasIO){
     vids.forEach(function(v){v.controls=true;v.preload='metadata';});
-    return;
+  }else{
+    var vio=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        var v=e.target;
+        if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){v.controls=true;});}
+        else v.pause();
+      });
+    },{threshold:.4});
+    vids.forEach(function(v){vio.observe(v);});
   }
-  var io=new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      var v=e.target;
-      if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){v.controls=true;});}
-      else v.pause();
-    });
-  },{threshold:.4});
-  vids.forEach(function(v){io.observe(v);});
+
+  // reveal on scroll
+  var rv=[].slice.call(document.querySelectorAll('.rv'));
+  if(calm||!hasIO){rv.forEach(function(el){el.classList.add('in');});}
+  else{
+    var rio=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target);}});
+    },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    rv.forEach(function(el){rio.observe(el);});
+  }
+
+  // count-up stats
+  var nums=[].slice.call(document.querySelectorAll('[data-count]'));
+  if(!calm&&hasIO){
+    var cio=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting)return;
+        var el=e.target,end=+el.dataset.count,start=end>1000?end-12:0,t0=null;
+        cio.unobserve(el);
+        (function tick(t){
+          if(!t0)t0=t;
+          var k=Math.min((t-t0)/1100,1),ease=1-Math.pow(1-k,3);
+          el.textContent=Math.round(start+(end-start)*ease);
+          if(k<1)requestAnimationFrame(tick);
+        })(performance.now());
+      });
+    },{threshold:.6});
+    nums.forEach(function(el){cio.observe(el);});
+  }
+
+  // header border + giant word drift
+  var head=document.querySelector('header.top'),giant=document.querySelector('[data-drift]'),ticking=false;
+  // reels: pin the row and slide it sideways as the page scrolls down
+  var pin=calm?null:document.querySelector('[data-pin]'),dist=0,padTop=0,stick=64;
+  if(pin){
+    var inner=pin.querySelector('.pin-inner'),wall=pin.querySelector('.wall');
+    pin.classList.add('pinned');
+    var size=function(){
+      pin.style.height='';
+      var pad=parseFloat(getComputedStyle(inner).paddingLeft)||0;
+      dist=Math.max(0,wall.scrollWidth-(inner.clientWidth-2*pad));
+      padTop=parseFloat(getComputedStyle(pin).paddingTop)||0;
+      stick=head.offsetHeight;
+      pin.style.height=(pin.offsetHeight+dist)+'px';
+      onScroll();
+    };
+    window.addEventListener('resize',size);
+    window.addEventListener('load',size);
+  }
+  function onScroll(){
+    var y=window.scrollY;
+    head.classList.toggle('scrolled',y>8);
+    if(giant&&!calm&&y<1400)giant.style.transform='translateX('+(-y*0.25)+'px)';
+    if(pin&&dist){
+      var p=(stick-(pin.getBoundingClientRect().top+padTop))/dist;
+      p=Math.min(1,Math.max(0,p));
+      wall.style.transform='translateX('+(-p*dist)+'px)';
+    }
+    ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll);}},{passive:true});
+  if(pin)size();else onScroll();
 })();
 </script>
 </body>
