@@ -203,6 +203,15 @@ h3{font-size:clamp(22px,2.1vw,36px);letter-spacing:-.025em;margin-bottom:6px}
 /* numbered cards */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,24px)}
 @media(max-width:900px){.cards{grid-template-columns:1fr}}
+/* wide screens: cards pile up like a deck, each sliding over the last */
+@media(min-width:901px){
+  .cards{grid-template-columns:1fr;gap:28px;padding-bottom:12px}
+  .cards .card{position:sticky;top:calc(92px + var(--i,0) * 22px);display:grid;grid-template-columns:clamp(110px,14vw,240px) 1fr;column-gap:clamp(24px,4vw,64px);align-content:center;min-height:clamp(260px,26vw,380px);padding:clamp(28px,3.4vw,52px)}
+  .cards .card:nth-child(1){margin-bottom:44px}.cards .card:nth-child(2){--i:1;margin-bottom:22px}.cards .card:nth-child(3){--i:2}
+  .cards .card .n{grid-row:1/span 4;font-size:clamp(80px,10vw,170px);margin:0;align-self:center}
+  .cards .card>:not(.n){grid-column:2}
+  .cards .card p{font-size:clamp(16px,1.4vw,22px)}
+}
 .card{position:relative;background:var(--card);border:1.5px solid var(--ink);border-radius:20px;padding:28px 26px 30px;box-shadow:5px 5px 0 var(--ink);transition:transform 200ms var(--ease-out),box-shadow 200ms var(--ease-out)}
 @media (hover:hover) and (pointer:fine){.card:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--sun)}}
 .card .n{font-family:var(--display);font-weight:900;font-variation-settings:"SOFT" 100,"WONK" 1;font-size:60px;letter-spacing:-.03em;line-height:1;color:var(--ink);text-shadow:4px 4px 0 var(--sun);display:block;margin-bottom:18px}
